@@ -1,3 +1,5 @@
+import Lottie from "lottie-react";
+// import animationData from "../../public/assets/Bouncing-period.json";
 
 const Experience = () => {
   const experiences = [
@@ -13,8 +15,8 @@ const Experience = () => {
 
   return (
     <section id="experience-loc" className="min-h-screen w-screen p-5 md:p-24 bg-[#2a2b30]">
-      <h1 className="text-4xl md:text-6xl font-bold text-[#fbfbfb] font-libre ">Experience</h1>
-       <div className="h-0.5 md:w-[310px] bg-[#fec86a] md:mr-8 mb-12" />
+      <h1 className="text-4xl md:text-5xl font-bold text-[#fbfbfb] font-libre ">Experience</h1>
+      <div className="h-0.5 md:w-[250px] bg-[#fec86a] md:mr-8 mb-12" />
       <div className="flex flex-col gap-8">
         {experiences.map((exp, index) => (
           <div key={index} className="relative bg-[#3d3e42] rounded-xl p-6 md:p-8 hover:bg-[#4a4b50] transition-all duration-300 border-l-4 border-[#fec86a]">
@@ -53,7 +55,10 @@ const Experience = () => {
           </div>
         ))}
       </div>
-
+      {/* <Lottie
+        animationData={animationData}
+        style={{ background: "none" }}
+      /> */}
     </section>
   );
 }

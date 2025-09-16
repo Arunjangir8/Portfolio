@@ -30,8 +30,8 @@ const Education = () => {
 
   return (
     <section id="education-loc" className="min-h-screen w-screen p-5 md:p-24 bg-[#2a2b30]">
-      <h1 className="text-4xl md:text-6xl font-bold text-[#fbfbfb] font-libre">Education</h1>
-      <div className="h-0.5 md:w-[280px] bg-[#fec86a] md:mr-8 mb-12" />
+      <h1 className="text-4xl md:text-5xl font-bold text-[#fbfbfb] font-libre">Education</h1>
+      <div className="h-0.5 md:w-[220px] bg-[#fec86a] md:mr-8 mb-12" />
       <div className="flex flex-col gap-8">
         {educationData.map((edu, index) => (
           <div

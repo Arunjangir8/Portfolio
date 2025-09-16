@@ -15,10 +15,10 @@ const Landing = () => {
         </a>
       </div>
       <div className='flex gap-5'>
-        <div className="h-64 w-64 md:h-80 md:w-80 lg:h-[600px] lg:w-[600px] flex overflow-hidden rounded-full border-4 border-white">
+        <div className="h-64 w-64 md:h-80 md:w-80 lg:h-[550px] lg:w-[550px] flex overflow-hidden rounded-full border-4 border-white mt-10">
           <img src="./assets/profileimage.jpeg" alt="Profile" className="object-cover w-full h-full" />
         </div>
-        <div className="flex md:flex-col gap-5 items-center mt-5 md:mt-[50vh]">
+        <div className="flex md:flex-col gap-5 items-center mt-5 md:mt-[50vh] mb-4">
           <div className="hidden md:block bg-[#fec86a] h-[15vh] w-[2.5px]" />
           <a href="https://github.com/Arunjangir8">
             <img
@@ -31,14 +31,14 @@ const Landing = () => {
             <img
               src="/assets/linkedin.svg"
               alt="github"
-              className="h-[38px] w-[38px] object-contain"
+              className="h-[35px] w-[35px] object-contain"
             />
           </a>
-          <a href="https://www.instagram.com/bejust_you/profilecard/?igsh=MXZiMXQ5M25mcWtzZA==">
+          <a href="https://www.instagram.com/_arunjangir_/">
             <img
               src="/assets/instagram.svg"
               alt="github"
-              className="h-[40px] w-[40px] object-contain"
+              className="h-[35px] w-[35px] object-contain"
             />
           </a>
         </div>
