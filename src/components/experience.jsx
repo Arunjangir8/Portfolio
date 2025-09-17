@@ -1,6 +1,3 @@
-import Lottie from "lottie-react";
-// import animationData from "../../public/assets/Bouncing-period.json";
-
 const Experience = () => {
   const experiences = [
     {
@@ -8,28 +5,41 @@ const Experience = () => {
       company: 'Commkraft',
       duration: 'May 2025 - Present',
       location: 'Remote',
-      description: 'Working on various full-stack projects using React, Node.js, Remix and Express as well as worked on Shopify. Collaborated with team members to build scalable web applications and gained hands-on experience in modern development practices.',
-      technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'JavaScript']
-    }
+      description:
+        'Working on various full-stack projects using React, Node.js, Remix and Express as well as worked on Shopify. Collaborated with team members to build scalable web applications and gained hands-on experience in modern development practices.',
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'JavaScript'],
+      logo: "./assets/commkraft.png",
+    },
   ];
 
   return (
     <section id="experience-loc" className="min-h-screen w-screen p-5 md:p-24 bg-[#2a2b30]">
-      <h1 className="text-4xl md:text-5xl font-bold text-[#fbfbfb] font-libre ">Experience</h1>
+      <h1 className="text-4xl md:text-5xl font-bold text-[#fbfbfb] font-libre">Experience</h1>
       <div className="h-0.5 md:w-[250px] bg-[#fec86a] md:mr-8 mb-12" />
       <div className="flex flex-col gap-8">
         {experiences.map((exp, index) => (
-          <div key={index} className="relative bg-[#3d3e42] rounded-xl p-6 md:p-8 hover:bg-[#4a4b50] transition-all duration-300 border-l-4 border-[#fec86a]">
+          <div
+            key={index}
+            className="relative bg-[#3d3e42] rounded-xl p-6 md:p-8 hover:bg-[#4a4b50] transition-all duration-300 border-l-4 border-[#fec86a]"
+          >
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-semibold text-[#fbfbfb] mb-1">
-                  {exp.title}
-                </h3>
-                <h4 className="text-lg md:text-xl text-[#fec86a] font-medium mb-2">
-                  {exp.company}
-                </h4>
+              <div className="flex items-center gap-4">
+                {/* Company Logo */}
+                <img
+                  src={exp.logo}
+                  alt={`${exp.company} logo`}
+                  className="w-12 h-12 md:w-16 md:h-16 rounded-lg object-contain bg-white p-1"
+                />
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-semibold text-[#fbfbfb] mb-1">
+                    {exp.title}
+                  </h3>
+                  <h4 className="text-lg md:text-xl text-[#fec86a] font-medium mb-2">
+                    {exp.company}
+                  </h4>
+                </div>
               </div>
-              <div className="text-right">
+              <div className="text-right mt-4 md:mt-0">
                 <p className="text-[#98999a] text-base md:text-lg mb-1">{exp.duration}</p>
                 <p className="text-[#98999a] text-sm md:text-base">{exp.location}</p>
               </div>
@@ -55,12 +65,8 @@ const Experience = () => {
           </div>
         ))}
       </div>
-      {/* <Lottie
-        animationData={animationData}
-        style={{ background: "none" }}
-      /> */}
     </section>
   );
-}
+};
 
 export default Experience;
