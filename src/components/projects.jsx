@@ -2,25 +2,25 @@
 const Projects = () => {
   const projects = [
     {
+      title: 'Food delivery application',
+      image: '/assets/food.jpg',
+      description: 'I built a full-stack food delivery platform using React, Node.js, Express.js, PostgreSQL, and Prisma ORM. It features dual authentication for customers and restaurants, real-time order tracking, a smart cart with favorites, multiple addresses, and a restaurant dashboard. The mobile-first UI was designed with Tailwind CSS and Ant Design, integrated with Cloudinary for image handling. Security includes JWT, bcryptjs password hashing, OTP-based email verification, and Razorpay for payments.',
+      link: 'https://github.com/Arunjangir8/food',
+      hostedlink: 'https://newfoodie.netlify.app'
+    },
+    {
       title: 'School Management System',
-      image: '/assets/port.jpg',
+      image: '/assets/schoolmanage.jpg',
       description: 'A comprehensive and modern School Management System built with Next.js 14, TypeScript, Tailwind CSS, Clerk Authentication, and Prisma ORM. This full-stack application provides role-based dashboards and streamlined school operations management for administrators, teachers, students, and parents..',
       link: 'https://github.com/Arunjangir8/School_management_system',
       hostedlink: 'https://school-management-system-4h4j.onrender.com/'
     },
     {
       title: 'Chat Application',
-      image: '/assets/cal.jpg',
+      image: '/assets/chat.jpg',
       description: 'This project is a modern real-time chat application built with React, Node.js, Express, Socket.IO, and Prisma ORM. It features text, image, and voice-to-text messaging with a responsive Ant Design interface. Users can chat in groups or direct messages, share images with previews, and convert speech to text seamlessly. Prisma ensures efficient and reliable database operations, while Socket.IO powers instant communication, presence, and typing indicators, delivering a fast, secure, and engaging chat experience.',
       link: 'https://github.com/Arunjangir8/meChat',
       hostedlink: 'https://me-chat-theta.vercel.app/'
-    },
-    {
-      title: 'Mock Interview Application',
-      image: '/assets/crypto.jpg',
-      description: 'The Mock Interview Booking System lets users schedule practice interviews with experts based on domain and availability. It supports technical, HR, and behavioral interviews, with instant confirmations, reminders, and feedback. Built with React, Node.js, and Prisma, it ensures smooth booking and secure data handling, helping candidates refine their interview skills for career success.',
-      link: 'https://github.com/Arunjangir8/mock-interview-application',
-      hostedlink: 'https://mock-interview-application.vercel.app/'
     }
   ];
 
